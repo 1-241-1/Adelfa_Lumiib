@@ -13,4 +13,3 @@ Put the two sides of the triangle into the chat and just wait for it to calculat
 side a:8
 side b:9
 The output will be "The Hypotenuse is: 12.041594578792296"
-
