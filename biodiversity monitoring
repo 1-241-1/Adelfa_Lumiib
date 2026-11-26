@@ -1,0 +1,69 @@
+population = []
+
+for i in range(1,6):
+  butterfly = int(input(f"Enter butterfly count for Site {i}: "))
+  if butterfly < 0:
+    print("Please enter a positive number")
+  else:
+    population.append(butterfly)
+
+butterfly_count = population.count()
+average = population
+butterfly_sum = population.sum()
+butterfly_ascending = population.sort()
+butterfly_reverse = population.reverse()
+butterfly_index = population.index()
+butterfly_clear = population.clear()
+copy = population.copy()
+clear = population.clear()
+
+print(f"Original Population Counts: {butterfly_count}")
+population.copy()
+print(f"Backup successfully created")
+
+choice = input("Enter Choice")
+if choice == "1":
+  print(butterfly_count)
+elif choice == "2":
+  new = int(input("Enter new population count: "))
+  population.append(new)
+elif choice == "3":
+  index = int(input("Enter number index: "))
+  count2 = int(input("Enter new population: "))
+  population.insert(index, count2)
+elif choice == "4":
+  remove = int(input("Remove what index number: "))
+  population.remove(remove)
+elif choice == "5":
+  pop = int(inpput("Remove a number and will also display: "))
+  population.pop(pop)
+elif choice == "6"
+  find = int(input("Enter population count to search: "))
+  population.count(find)
+elif choice == "7"
+  print("=====POPULATION STATISTICS======")
+  print(f"Population Count: {population}")
+  print(f"Number of Records: {butterfly_count}")
+  print(f"Total Population Count: {butterfly_sum}")
+  print(f"Average Population Count: ")
+  print(f"Highest")
+elif choice == "8":
+  print("[A] Ascending")
+  print("[B] Descending")
+  choice3 = input("Enter sorting order: ").lower
+  if choice3 == "a"
+    print(f"Sorting Records: {butterfly_ascending}")
+  else:
+    print(f"Sorting Records: {butterfly_reverse}")
+elif choice == "9":
+  print(f"Reverse Records: {butterfly_reverse}")
+elif choice == "10":
+  print("All records have been cleared")
+  population.clear()
+  print(f"Current record: {population}")
+elif choice == "11":
+  print("Original records have been successfully restored")
+  population.copy()
+  print(f"Current Record: {population}")
+elif choice == "12":
+  print("Thankyou for using the Biodiversity Monitoring System!!!!")
